@@ -9,6 +9,10 @@
 <script>
 export default {
   name: 'App',
+  created(){
+    const hasDarkPreference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    this.$vuetify.theme.dark = hasDarkPreference;
+  }
 };
 </script>
 

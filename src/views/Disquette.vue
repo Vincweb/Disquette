@@ -23,6 +23,17 @@
           </transition>
         </v-col>
       </v-row> 
+      <v-btn
+        absolute
+        top
+        right
+        icon
+        @click="$vuetify.theme.dark = !$vuetify.theme.dark"
+      >
+        <v-icon>
+          mdi-theme-light-dark
+        </v-icon>
+      </v-btn>
     </v-container>
 </transition>
 </template>
